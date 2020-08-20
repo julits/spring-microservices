@@ -1,0 +1,12 @@
+external:
+  property: hello universe
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh
+
+feign:
+  hystrix:
+    enabled: true

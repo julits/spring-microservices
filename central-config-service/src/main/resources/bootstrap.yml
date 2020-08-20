@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: central-config
+  cloud:
+    config:
+      server:
+        prefix: /config
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
